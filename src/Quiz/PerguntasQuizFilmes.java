@@ -3,26 +3,26 @@ package Quiz;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PerguntasQuizFilmes {
+public class PerguntasQuizFilmes{
 
-    private List<PergundasRespostas> perguntasFilmes = new ArrayList<>();
+    private List<PerguntasRespostas> perguntasFilmes = new ArrayList<>();
 
 
     public PerguntasQuizFilmes() {
-        PergundasRespostas pergundasRespostas1 = new PergundasRespostas();
+        PerguntasRespostas pergundasRespostas1 = new PerguntasRespostas();
         pergundasRespostas1.setPerguntas("Qual foi o maior vilão dos Filmes Vingadores?") ;
         pergundasRespostas1.setResposta("Thanos");
 
-        PergundasRespostas pergundasRespostas2 = new PergundasRespostas();
+        PerguntasRespostas pergundasRespostas2 = new PerguntasRespostas();
         //base no link ("https://www.aficionados.com.br/vingadores-ultimato-todos-os-personagens-que-apareceram-no-longa/")
         pergundasRespostas2.setPerguntas("Quanto personagens  compunha os elencos do filme Vingadores - Guerra Infinita?");
         pergundasRespostas2.setResposta("38");
 
-        PergundasRespostas pergundasRespostas3 = new PergundasRespostas();
+        PerguntasRespostas pergundasRespostas3 = new PerguntasRespostas();
         pergundasRespostas3.setPerguntas("Quantos filmes de Harry Portter foram exibidos?");
         pergundasRespostas3.setResposta("8");
 
-        PergundasRespostas pergundasRespostas4 = new PergundasRespostas();
+        PerguntasRespostas pergundasRespostas4 = new PerguntasRespostas();
         pergundasRespostas4.setPerguntas("nome do gigando amigo do harry portter");
         pergundasRespostas4.setResposta("Rúbeo Hagrid");
 
@@ -33,7 +33,7 @@ public class PerguntasQuizFilmes {
 
     }
 
-    public List<PergundasRespostas> getPerguntasFilmes() {
+    public List<PerguntasRespostas> getPerguntasFilmes() {
         return perguntasFilmes;
     }
 

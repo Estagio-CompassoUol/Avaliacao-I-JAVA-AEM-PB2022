@@ -5,23 +5,23 @@ import java.util.List;
 
 public class PerguntasQuizCuriosidades {
 
-    private List<PergundasRespostas> perguntasCurios = new ArrayList<>();
+    private List<PerguntasRespostas> perguntasCurios = new ArrayList<>();
 
 
     public PerguntasQuizCuriosidades() {
-        PergundasRespostas pergundasRespostas1 = new PergundasRespostas();
+        PerguntasRespostas pergundasRespostas1 = new PerguntasRespostas();
         pergundasRespostas1.setPerguntas("Qual o maior oceano do mundo?") ;
         pergundasRespostas1.setResposta("Pacifico");
 
-        PergundasRespostas pergundasRespostas2 = new PergundasRespostas();
+        PerguntasRespostas pergundasRespostas2 = new PerguntasRespostas();
         pergundasRespostas2.setPerguntas("Qual o maior continente do mundo?");
         pergundasRespostas2.setResposta("Asia");
 
-        PergundasRespostas pergundasRespostas3 = new PergundasRespostas();
+        PerguntasRespostas pergundasRespostas3 = new PerguntasRespostas();
         pergundasRespostas3.setPerguntas("Onde encontramos o Tigre-de-bengala?");
         pergundasRespostas3.setResposta("India");
 
-        PergundasRespostas pergundasRespostas4 = new PergundasRespostas();
+        PerguntasRespostas pergundasRespostas4 = new PerguntasRespostas();
         pergundasRespostas4.setPerguntas("quantos planetas existem no sistema solar?");
         pergundasRespostas4.setResposta("8");
 
@@ -33,10 +33,9 @@ public class PerguntasQuizCuriosidades {
         this.perguntasCurios = perguntasCurios;
     }
 
-    public List<PergundasRespostas> getPerguntasCurios() {
+    public List<PerguntasRespostas> getPerguntasCurios() {
         return perguntasCurios;
     }
-
 
 }
 
