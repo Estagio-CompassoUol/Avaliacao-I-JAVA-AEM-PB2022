@@ -19,7 +19,7 @@ public class AppVerificacaoBonificacao {
 
                 PrintWriter gravaArq = new PrintWriter("dados.txt", "UTF-8");
 
-                System.out.println("Informção de Bonificação dos usuários\n");
+                System.out.println("Informação de Bonificação dos usuários\n");
                 System.out.println("Para realizar o calculo favor informar para quantos funcionários sera calculado: \n");
 
                 int qtnFuncionarios = leituraDoub.nextInt();
