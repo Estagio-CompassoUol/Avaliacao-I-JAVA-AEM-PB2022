@@ -24,7 +24,7 @@ public class PerguntasQuizFilmes{
 
         PerguntasRespostas pergundasRespostas4 = new PerguntasRespostas();
         pergundasRespostas4.setPerguntas("nome do gigando amigo do harry portter");
-        pergundasRespostas4.setResposta("Rúbeo Hagrid");
+        pergundasRespostas4.setResposta("Hagrid");
 
         this.perguntasFilmes.add(pergundasRespostas1);
         this.perguntasFilmes.add(pergundasRespostas2);

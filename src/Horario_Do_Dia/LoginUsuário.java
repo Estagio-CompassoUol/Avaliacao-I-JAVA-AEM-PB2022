@@ -19,7 +19,7 @@ public class LoginUsuário {
     }
     public void imprimirHoraDia(){
         LocalTime horaAtual = LocalTime.now();
-        System.out.println("\n"+horaAtual);
+
          int hora = horaAtual.getHour();
          int min = horaAtual.getMinute();
 

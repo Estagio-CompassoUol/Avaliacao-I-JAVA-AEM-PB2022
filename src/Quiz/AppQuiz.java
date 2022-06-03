@@ -27,11 +27,12 @@ public class AppQuiz {
                 if (opt != 4) {
                     System.out.println("Qual é o seu nome?");
                     usuario = leituraResp.nextLine();
+
                 }
-            
 
                  if (opt == 1) {
                     PerguntasQuizFutebool perguntasQuiz = new PerguntasQuizFutebool();
+                     System.out.println("Vamos começar\n");
                      for (int i=0; i< 4; i++) {
                          System.out.println("-------------------------------------------\n");
                          System.out.println(perguntasQuiz.getPerguntasFutebool().get(i).getPerguntas());
@@ -53,6 +54,7 @@ public class AppQuiz {
                          System.out.printf(" "+respostaCorreta.getResposta()+" ");
                      }
                      System.out.println("\n");
+
                 } else if (opt == 2) {
                      PerguntasQuizFilmes perguntasQuiz = new PerguntasQuizFilmes();
 
@@ -92,7 +94,7 @@ public class AppQuiz {
                                  System.out.println("Voce acertou");
                              } else {
                                  conterradas++;
-                                 System.out.println("Voce errou");
+                                  System.out.println("Voce errou");
                              }
                              respostasUsuario.add(resposta);
 
@@ -101,7 +103,7 @@ public class AppQuiz {
                      pergundasRespostas.ImprimirResultado(contCertas, conterradas,usuario, respostasUsuario);
                      System.out.printf("\nRespostas Corretas: ");
                      for (PerguntasRespostas respostaCorreta: perguntasQuiz.getPerguntasCurios()) {
-                         System.out.printf(" "+respostaCorreta.getResposta()+" ");
+                         System.out.print(" "+respostaCorreta.getResposta()+" ");
                      }
                      System.out.println("\n");
                  } else if (opt != 4) {

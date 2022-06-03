@@ -44,15 +44,15 @@ public class PerguntasRespostas {
            System.out.println("Errou " + conterradas + " respostas\n");
             System.out.printf("Suas respostas foram: ");
            for (String resposta: respostas) {
-               System.out.print(" "+resposta+ " ");
+               System.out.print (" "+resposta+ " ");
             }
 
        } else if (contCertas==conterradas) {
            System.out.println("Voce acertou " + contCertas + " resposta " );
-           System.out.println("Errou " + conterradas + " respostas +nome+\n");
+           System.out.println("Errou " + conterradas + " respostas " +nome+"\n");
             System.out.printf("Suas respostas foram: ");
             for (String resposta: respostas) {
-                System.out.printf(" "+resposta+ " ");
+                System.out.print(" "+resposta+ " ");
             }
 
        } else if (contCertas==0) {
@@ -60,7 +60,7 @@ public class PerguntasRespostas {
             System.out.println("Errou " + conterradas + " respostas\n");
             System.out.printf("Suas respostas foram: ");
             for (String resposta: respostas) {
-                System.out.println(" "+resposta+ " ");
+                System.out.print(" "+resposta+ " ");
             }
 
        } else if (conterradas==0) {
@@ -68,7 +68,7 @@ public class PerguntasRespostas {
             System.out.println("E não errou nenhuma respostas\n");
             System.out.printf("Suas respostas foram");
             for (String resposta: respostas) {
-                System.out.println(" "+resposta+" ");
+                System.out.print(" "+resposta+" ");
             }
 
        }else {
@@ -76,7 +76,7 @@ public class PerguntasRespostas {
            System.out.println("E errou " + conterradas + " respostas\n");
             System.out.println("Suas respostas foram");
             for (String resposta: respostas) {
-                System.out.println(resposta);
+                System.out.print(" "+resposta+" ");
             }
 
        }

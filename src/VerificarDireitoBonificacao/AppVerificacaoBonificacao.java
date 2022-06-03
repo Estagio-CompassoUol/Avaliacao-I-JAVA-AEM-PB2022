@@ -12,7 +12,6 @@ public class AppVerificacaoBonificacao {
         CalcularBonificacao calcularBonificacao = new CalcularBonificacao();
         String sair = "";
 
-
         do{
 
             try {
