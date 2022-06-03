@@ -17,7 +17,7 @@ public class AppVerificacaoBonificacao {
 
             try {
 
-                PrintWriter gravaArq = new PrintWriter("dados.txt", "UTF-8");
+                PrintWriter gravaArq = new PrintWriter("dadosFuncionarios.txt", "UTF-8");
 
                 System.out.println("Informação de Bonificação dos usuários\n");
                 System.out.println("Para realizar o calculo favor informar para quantos funcionários sera calculado: \n");
@@ -45,7 +45,7 @@ public class AppVerificacaoBonificacao {
                 }
                 gravaArq.close();
 
-                Scanner leituraArq = new Scanner(new File("dados.txt"), "UTF-8");
+                Scanner leituraArq = new Scanner(new File("dadosFuncionarios.txt"), "UTF-8");
 
                 for (int i = 0; i < qtnFuncionarios; i++) {
                     String linha = leituraArq.nextLine();
