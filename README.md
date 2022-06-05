@@ -8,7 +8,7 @@ Horario_do_dia
 
 Esse programa imprime um mensagem "bom dia...", "boa tarde...", "boa noite..." e "boa madrugada..." de acordo com o horário atual do Sistema Operacional após o login do usuário;
 
-1 - O programa solicita usuário e senha quando iniciado;
+1 - O programa solicita usuário e senha quando iniciado;"\n"
 2 - Recebe os dados digitado no teclado;
 3 - Compara com os dados de usuário com o salvo no sistema;
 4 - Retorna uma mensagem de "bom dia...", "boa tarde...", "boa noite..." e "boa madrugada..." de acordo com o horário atual do Sistema Operacional;
