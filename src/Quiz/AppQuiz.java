@@ -11,9 +11,13 @@ public class AppQuiz {
 
         int opt = 0;
 
+        Scanner leituraResp = new Scanner(System.in);
+        System.out.println("Qual é o seu nome?");
+        String usuario =  leituraResp.nextLine();
+
 
         do {
-            Scanner leituraResp = new Scanner(System.in);
+
             int contCertas=0;
             int conterradas=0;
 
@@ -23,16 +27,12 @@ public class AppQuiz {
                        
             try {
                 opt = scan.nextInt();
-                String usuario = "";
-                if (opt != 4) {
-                    System.out.println("Qual é o seu nome?");
-                    usuario = leituraResp.nextLine();
 
-                }
 
                  if (opt == 1) {
                     PerguntasQuizFutebool perguntasQuiz = new PerguntasQuizFutebool();
                      System.out.println("Vamos começar\n");
+
                      for (int i=0; i< 4; i++) {
                          System.out.println("-------------------------------------------\n");
                          System.out.println(perguntasQuiz.getPerguntasFutebool().get(i).getPerguntas());
@@ -48,7 +48,7 @@ public class AppQuiz {
                          respostasUsuario.add(resposta);
                     }
                      pergundasRespostas.ImprimirResultado(contCertas, conterradas, usuario,respostasUsuario);
-
+                     respostasUsuario.clear();
                      System.out.printf("\nRespostas Corretas: ");
                      for (PerguntasRespostas respostaCorreta: perguntasQuiz.getPerguntasFutebool()) {
                          System.out.printf(" "+respostaCorreta.getResposta()+" ");
@@ -72,9 +72,9 @@ public class AppQuiz {
                                  }
                                  respostasUsuario.add(resposta);
 
-
                      }
                      pergundasRespostas.ImprimirResultado(contCertas, conterradas, usuario,respostasUsuario);
+                     respostasUsuario.clear();
                      System.out.printf("\nRespostas Corretas: ");
                      for (PerguntasRespostas respostaCorreta: perguntasQuiz.getPerguntasFilmes()) {
                          System.out.printf(" "+respostaCorreta.getResposta()+" ");
@@ -101,6 +101,7 @@ public class AppQuiz {
                      }
 
                      pergundasRespostas.ImprimirResultado(contCertas, conterradas,usuario, respostasUsuario);
+                     respostasUsuario.clear();
                      System.out.printf("\nRespostas Corretas: ");
                      for (PerguntasRespostas respostaCorreta: perguntasQuiz.getPerguntasCurios()) {
                          System.out.print(" "+respostaCorreta.getResposta()+" ");

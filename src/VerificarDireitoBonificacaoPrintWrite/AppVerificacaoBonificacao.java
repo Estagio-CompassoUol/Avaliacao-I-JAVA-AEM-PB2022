@@ -1,4 +1,4 @@
-package VerificarDireitoBonificacao;
+package VerificarDireitoBonificacaoPrintWrite;
 
 import java.io.*;
 

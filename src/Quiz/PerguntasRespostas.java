@@ -66,7 +66,7 @@ public class PerguntasRespostas {
        } else if (conterradas==0) {
             System.out.println("Parabens  "+nome +", Voce acertou " + contCertas + " resposta\n");
             System.out.println("E não errou nenhuma respostas\n");
-            System.out.printf("Suas respostas foram");
+            System.out.printf("Suas respostas foram: ");
             for (String resposta: respostas) {
                 System.out.print(" "+resposta+" ");
             }
@@ -74,7 +74,7 @@ public class PerguntasRespostas {
        }else {
            System.out.println("\nSorry "+nome +", Voce acertou somente " + contCertas + " resposta\n");
            System.out.println("E errou " + conterradas + " respostas\n");
-            System.out.println("Suas respostas foram");
+            System.out.printf("Suas respostas foram: ");
             for (String resposta: respostas) {
                 System.out.print(" "+resposta+" ");
             }

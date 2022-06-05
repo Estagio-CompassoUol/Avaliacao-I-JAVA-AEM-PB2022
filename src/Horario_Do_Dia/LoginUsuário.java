@@ -22,7 +22,7 @@ public class LoginUsuário {
 
          int hora = horaAtual.getHour();
          int min = horaAtual.getMinute();
-
+        System.out.println("");
         if (hora>=6 && hora<12 && min<=59){
             System.out.println("Bom dia, você se logou ao nosso sistema.");
         } else if (hora>=12 && hora<18 && min<=59) {
